@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+<div id="app">
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="logo">
+                <a class="logo-link" href="index.html">
+                    <img class="logo-img" src="img/logo.png" alt="logo">
+                    <span class="logo-text">BRAN<span class="logo-text-d">D</span></span>
+                </a>
+            </div>
+            <div class="search">
+                <div class="search-browse"><span class="search-browse-text">Browse</span>
+                    <i class="fas fa-caret-down"></i>
+                    <nav class="search-browse-drop">
+                        <div class="search-browse-drop-block">
+                            <h3 class="search-browse-drop-header">Women</h3>
+                            <ul class="search-browse-drop-list">
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Dresses</a></li>
+                                <li class="search-browse-drop-item"><a href="#" class="search-browse-drop-link">Tops</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Sweaters/Knits</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Jackets/Coats</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Blazers</a></li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Denim</a></li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Leggings/Pants</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Skirts/Shorts</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Accessories</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search-browse-drop-block">
+                            <h3 class="search-browse-drop-header">Men</h3>
+                            <ul class="search-browse-drop-list">
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Tees/Tank
+                                    tops</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Shirts/Polos</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Sweaters</a></li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Sweatshirts/Hoodies</a>
+                                </li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Blazers</a></li>
+                                <li class="search-browse-drop-item"><a href="#"
+                                                                       class="search-browse-drop-link">Jackets/vests</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <form class="search-form" action="#">
+                    <input class="search-form-field" type="text" placeholder="Search for Item...">
+                    <button class="search-form-button" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="login">
+                <cart ref="cart"></cart>
+
+
+                <button class="login-button">My Account
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-wrapper">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Man </a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Women</a>
+                    <div class="nav-drop">
+                        <div class="nav-drop-col">
+                            <h3 class="nav-drop-header">Women</h3>
+                            <ul class="nav-drop-list">
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Dresses</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Tops</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Sweaters/Knits</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Jackets/Coats</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Blazers</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Denim</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Leggings/Pants</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Skirts/Shorts</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-drop-col">
+                            <h3 class="nav-drop-header">Women</h3>
+                            <ul class="nav-drop-list">
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Dresses</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Tops</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Sweaters/Knits</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Jackets/Coats</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Blazers</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Denim</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Leggings/Pants</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Skirts/Shorts</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-drop-col">
+                            <h3 class="nav-drop-header">Women</h3>
+                            <ul class="nav-drop-list">
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Dresses</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Tops</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Sweaters/Knits</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Jackets/Coats</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Blazers</a></li>
+                            </ul>
+                            <div class="nav-drop-sales-img"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Kids</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Accessories</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Featured</a></li>
+                <li class="nav-item nav-last-item"><a href="#" class="nav-link">Hot Deals</a>
+                    <div class="nav-drop">
+                        <div class="nav-drop-col">
+                            <h3 class="nav-drop-header">Hot Deals</h3>
+                            <ul class="nav-drop-list">
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Dresses</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Tops</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Sweaters/Knits</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Jackets/Coats</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Blazers</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Denim</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Leggings/Pants</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Skirts/Shorts</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-drop-col">
+                            <h3 class="nav-drop-header">Hot Deals</h3>
+                            <ul class="nav-drop-list">
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Dresses</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Tops</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Sweaters/Knits</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Jackets/Coats</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Blazers</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Denim</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Leggings/Pants</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Skirts/Shorts</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-drop-col">
+                            <h3 class="nav-drop-header">Hot Deals</h3>
+                            <ul class="nav-drop-list">
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Dresses</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Tops</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Sweaters/Knits</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Jackets/Coats</a></li>
+                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Blazers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="breadcrumb-bar">
+        <div class="breadcrumb-bar-wrapper">
+            <h2 class="breadcrumb-bar-header pink-text">New Arrivals </h2>
+            <nav class="breadcrumb">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="" class="breadcrumb-link">Home</a></li>
+                    <li class="breadcrumb-item"><a href="" class="breadcrumb-link">Men</a></li>
+                    <li class="breadcrumb-item"><a href="" class="breadcrumb-link  breadcrumb-link-active">New
+                        Arrivals </a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </section>
+
+    <main>
+        <div class="checkout-wrap">
+            <details class="checkout-item" open>
+                <summary class="checkout-item-view">01.&nbsp;&nbsp;&nbsp;Shipping Adress</summary>
+                <div class="registration-box">
+                    <form class="registration-form">
+                        <h3 class="registration-form-name">Check as a guest or register</h3>
+                        <p class="registration-form-text">Register with us for future convenience</p>
+                        <div class="registration-check">
+                            <input type="radio" name="registration" id="guest" value="guest" checked><label for="guest" class="registration-input-name">checkout as guest</label>
+                        </div>
+                        <div class="registration-check">
+                            <input type="radio" name="registration" id="register" value="register"><label for="register" class="registration-input-name">register</label>
+                        </div>
+                        <h3 class="registration-form-name">register and save time!</h3>
+                        <p class="registration-form-text">Register with us for future convenience</p>
+                        <span class="registration-form-text-val">Fast and easy checkout</span>
+                        <span class="registration-form-text-val">Easy access to your order history and status</span>
+                        <button class="registration-form-btn">Continue</button>
+                    </form>
+                    <form class="registration-form">
+                        <h3 class="registration-form-name">Already registed?</h3>
+                        <p class="registration-form-text">Please log in below</p>
+                        <label for="mail" class="registration-input-name-mail">EMAIL ADDRESS</label>
+                        <input type="text" id="mail">
+                        <label for="password" class="registration-input-name-mail">PASSWORD</label>
+                        <input type="password" id="password">
+                        <p class="requiredFileds">* Required Fileds</p>
+                        <div class="registration-login">
+                            <button class="registration-form-btn">Log in</button>
+                            <a href="#" class="registration-login-link">Forgot Password ?</a>
+                        </div>
+                    </form>
+                </div>
+            </details>
+            <details class="checkout-item">
+                <summary class="checkout-item-view">02.&nbsp;&nbsp;&nbsp;BILLING INFORMATION</summary>
+            </details>
+            <details class="checkout-item">
+                <summary class="checkout-item-view">03.&nbsp;&nbsp;&nbsp;SHIPPING INFORMATION</summary>
+            </details>
+            <details class="checkout-item">
+                <summary class="checkout-item-view">04.&nbsp;&nbsp;&nbsp;SHIPPING METHOD</summary>
+            </details>
+            <details class="checkout-item">
+                <summary class="checkout-item-view">05.&nbsp;&nbsp;&nbsp;PAYMENT METHOD</summary>
+            </details>
+            <details class="checkout-item">
+                <summary class="checkout-item-view">06.&nbsp;&nbsp;&nbsp;ORDER REVIEW</summary>
+            </details>
+        </div>
+    </main>
+
+
+    <footer class="page-footer">
+        <div class="feedback">
+            <h2 class="hidden">feedback</h2>
+
+            <div class="feedback-wrapper">
+                <article class="comment">
+                    <h3 class="hidden">Отзывы</h3>
+                    <div class="comment-photo"></div>
+                    <div class="comment-text-block">
+                        <p class="comment-text">&laquo;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi,
+                            a&nbsp;pulvinar purus condimentum&nbsp;a. Aliquam condimentum mattis neque sed
+                            pretium&raquo;</p>
+                        <span class="comment-caption-text1">Bin Burhan</span><br><span
+                            class="comment-caption-text2">Dhaka, Bd</span>
+                        <div class="comment-pagination">
+                            <a href="#" class="pagination-item"></a>
+                            <a href="#" class="pagination-item pagination-item-active"></a>
+                            <a href="#" class="pagination-item"></a>
+                        </div>
+                    </div>
+                </article>
+                <div class="splitter"></div>
+                <article class="subscribe">
+                    <h3 class="subscribe-header">Subscribe</h3>
+                    <p class="subscribe-text">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe-form" action="#">
+                        <input class="subscribe-form-field" type="text" placeholder="Enter Your Email">
+                        <button class="subscribe-form-button">Subscribe</button>
+                    </form>
+                </article>
+            </div>
+
+        </div>
+
+        <div class="page-footer-top">
+            <div class="footer-top-wrapper">
+                <section class="footer-top-info">
+                    <h2 class="hidden">About company</h2>
+                    <div class="logo">
+                        <a class="logo-link" href="index.html">
+                            <img class="logo-img" src="img/logo.png" alt="logo">
+                            <span class="logo-text">BRAN<span class="logo-text-d">D</span></span>
+                        </a>
+                    </div>
+                    <p class="footer-top-info-text">
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate
+                        an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.
+                        <br><br>
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </p>
+                </section>
+
+                <section class="footer-top-company">
+                    <h2 class="footer-top-company-head">COMPANY</h2>
+                    <ul class="footer-top-company-list">
+                        <li class="footer-top-company-item">
+                            <a href="index.html" class="footer-top-company-link footer-link-hover">Home</a>
+                        </li>
+                        <li class="footer-top-company-item">
+                            <a href="#" class="footer-top-company-link footer-link-hover">Shop</a>
+                        </li>
+                        <li class="footer-top-company-item">
+                            <a href="#" class="footer-top-company-link footer-link-hover">About</a>
+                        </li>
+                        <li class="footer-top-company-item">
+                            <a href="#" class="footer-top-company-link footer-link-hover">How It Works</a>
+                        </li>
+                        <li class="footer-top-company-item">
+                            <a href="#" class="footer-top-company-link footer-link-hover">Contact</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer-top-information">
+                    <h2 class="footer-top-information-head">INFORMATION</h2>
+                    <ul class="footer-top-information-list">
+                        <li class="footer-top-information-item">
+                            <a href="#" class="footer-top-information-link footer-link-hover">Tearms
+                                &amp;&nbsp;Condition</a>
+                        </li>
+                        <li class="footer-top-cinformation-item">
+                            <a href="#" class="footer-top-information-link footer-link-hover">Privacy Policy</a>
+                        </li>
+                        <li class="footer-top-information-item">
+                            <a href="#" class="footer-top-information-link footer-link-hover">How to Buy</a>
+                        </li>
+                        <li class="footer-top-information-item">
+                            <a href="#" class="footer-top-information-link footer-link-hover">How to Sell</a>
+                        </li>
+                        <li class="footer-top-information-item">
+                            <a href="#" class="footer-top-information-link footer-link-hover">Promotion</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="footer-top-category">
+                    <h2 class="footer-top-category-head">SHOP CATEGORY</h2>
+                    <ul class="footer-top-category-list">
+                        <li class="footer-top-category-item">
+                            <a href="men-product.html" class="footer-top-category-link footer-link-hover">Men</a>
+                        </li>
+                        <li class="footer-top-category-item">
+                            <a href="#" class="footer-top-category-link footer-link-hover">Women</a>
+                        </li>
+                        <li class="footer-top-category-item">
+                            <a href="#" class="footer-top-category-link footer-link-hover">Child</a>
+                        </li>
+                        <li class="footer-top-category-item">
+                            <a href="#" class="footer-top-category-link footer-link-hover">Apparel</a>
+                        </li>
+                        <li class="footer-top-category-item">
+                            <a href="catalog.html" class="footer-top-category-link footer-link-hover">Brows All</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="page-footer-bottom">
+            <div class="footer-bottom-wrapper">
+                <p class="footer-copyright">&copy;&nbsp;2017 Brand All Rights Reserved.</p>
+                <section class="social">
+                    <h2 class="hidden">Social Network</h2>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-google-plus-g"></i></a>
+                </section>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script defer src="js/main.js" type="module"></script>
+</body>
+
+</html>

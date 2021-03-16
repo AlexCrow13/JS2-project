@@ -1,0 +1,128 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Product-1",
+    "price": 1600,
+    "img": "img/catalog/product-1.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 2,
+    "product_name": "Product-2",
+    "price": 3000,
+    "img": "img/catalog/product-2.jpg",
+    "gender": "female"
+  },
+  {
+    "id_product": 3,
+    "product_name": "Product-3",
+    "price": 2600,
+    "img": "img/catalog/product-3.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 4,
+    "product_name": "Product-4",
+    "price": 1200,
+    "img": "img/catalog/product-4.jpg",
+    "gender": "female"
+  },
+  {
+    "id_product": 5,
+    "product_name": "Product-5",
+    "price": 1850,
+    "img": "img/catalog/product-5.jpg",
+    "gender": "female"
+  },
+  {
+    "id_product": 6,
+    "product_name": "Product-6",
+    "price": 2350,
+    "img": "img/catalog/product-6.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 7,
+    "product_name": "Product-7",
+    "price": 4600,
+    "img": "img/catalog/product-7.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 8,
+    "product_name": "Product-8",
+    "price": 5100,
+    "img": "img/catalog/product-8.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 9,
+    "product_name": "Product-9",
+    "price": 1600,
+    "img": "img/catalog/product-9.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 10,
+    "product_name": "Product-10",
+    "price": 3000,
+    "img": "img/catalog/product-10.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 11,
+    "product_name": "Product-11",
+    "price": 2600,
+    "img": "img/catalog/product-11.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 12,
+    "product_name": "Product-12",
+    "price": 1200,
+    "img": "img/catalog/product-12.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 13,
+    "product_name": "Product-13",
+    "price": 1850,
+    "img": "img/catalog/product-13.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 14,
+    "product_name": "Product-14",
+    "price": 2350,
+    "img": "img/catalog/product-14.jpg",
+    "gender": "male"
+  },
+  {
+    "id_product": 15,
+    "product_name": "Product-15",
+    "price": 4600,
+    "img": "img/catalog/product-15.jpg",
+    "gender": "female"
+  },
+  {
+    "id_product": 16,
+    "product_name": "Product-16",
+    "price": 5100,
+    "img": "img/catalog/product-16.jpg",
+    "gender": "female"
+  },
+  {
+    "id_product": 17,
+    "product_name": "Product-17",
+    "price": 4600,
+    "img": "img/catalog/product-17.jpg",
+    "gender": "female"
+  },
+  {
+    "id_product": 18,
+    "product_name": "Product-18",
+    "price": 5100,
+    "img": "img/catalog/product-18.jpg",
+    "gender": "female"
+  }
+]

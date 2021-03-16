@@ -1,0 +1,254 @@
+//Footer
+
+.feedback {
+    background: url(../img/slider22.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #f7f7f8;
+    margin-top: 100px;
+    display: flex;
+}
+
+// .feedback-grad {
+//     background-image: 
+//     width: 100%;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+.feedback-wrapper {
+    @include content-wrap;
+    height: 438px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment {
+    display: flex;
+    align-self: center;
+}
+
+.comment-photo {
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background-image: url(../img/photo.jpg);
+}
+
+.comment-text-block {
+    margin-left: 28px;
+}
+
+.comment-text {
+    width: 386px;
+    height: 68px;
+    color: #222224;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+}
+
+.comment-caption-text1 {
+    /* Style for "Bin Burhan" */
+    color: $pink-color;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.comment-caption-text2 {
+    /* Text style for "Dhaka, Bd" */
+    color: #222224;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.comment-pagination {
+    display: flex;
+}
+
+.pagination-item {
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+    margin-top: 40px;
+    margin-right: 13px;
+
+    &:hover {
+        background-color: $pink-color;
+    }
+
+    &-active {
+        background-color: $pink-color;
+    }
+}
+
+.splitter {
+    width: 1px;
+    background-color: #ffffff;
+}
+
+.subscribe {
+    align-self: center;
+}
+
+.subscribe-header {
+    /* Style for "Subscribe" */
+    color: #222224;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.subscribe-text {
+    /* Text style for "FOR OUR NE" */
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.35px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    height: 46px;
+
+    &-field {
+        width: 230px;
+        border-radius: 23px 0 0 23px;
+        background-color: #e1e1e1;
+        border: none;
+        padding: 18px 28px;
+
+        &:focus {
+            background-color: #ffffff;
+        }
+
+        &::placeholder {
+            opacity: 0.67;
+            color: #222224;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.35px;
+        }
+    }
+
+    &-button {
+        width: 104px;
+        height: 46px;
+        border-radius: 0 23px 23px 0;
+        background-color: $pink-color;
+        border: none;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.35px;
+        transition: $transition-time;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.6;
+        }
+    }
+}
+
+.footer-top-wrapper {
+    @include content-wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+
+.footer-top-info-text {
+    width: 428px;
+    color: #898989;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+}
+
+.footer-top-company-list,
+.footer-top-information-list,
+.footer-top-category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-top-company-head,
+.footer-top-information-head,
+.footer-top-category-head {
+    color: $pink-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+
+.footer-top-company-link,
+.footer-top-information-link,
+.footer-top-category-link {
+    text-decoration: none;
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    line-height: 42px;
+}
+
+.footer-link-hover:hover {
+    color: #222222;
+}
+
+.page-footer-bottom {
+    background-color: #e6e6e6;
+}
+
+.footer-bottom-wrapper {
+    @include content-wrap;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.social {
+    display: flex;
+
+    &-link {
+        text-decoration: none;
+        width: 32px;
+        height: 32px;
+        background-color: #ffffff;
+        color: #b2b2b2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+        transition: $transition-time;
+
+        &:hover {
+            background-color: $pink-color;
+            color: #f7f7f8;
+        }
+    }
+}

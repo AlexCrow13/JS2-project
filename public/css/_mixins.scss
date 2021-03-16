@@ -1,0 +1,43 @@
+@mixin content-wrap {
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin list-type-none {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin category-badge-box {
+    height: 82px;
+    background-color: #ffffff;
+    margin-top: 26px;
+    @include flex-column;
+    justify-content: center; 
+}
+
+@mixin filter-header {
+    margin: 0;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin cart-btn {
+    width: 230px;
+    height: 50px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.5;
+}
