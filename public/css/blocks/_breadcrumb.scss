@@ -1,0 +1,54 @@
+//Breadcrumb
+
+.breadcrumb-bar {
+    background-color: #f8f3f4;
+}
+
+.breadcrumb-bar-wrapper {
+    @include content-wrap;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb-bar-header {
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.breadcrumb-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #636363;
+
+    &::after {
+        content: " /";
+    }
+
+    &:hover {
+        font-weight: 700;
+        color: #222222;
+    }
+}
+
+.breadcrumb-link-active {
+    font-weight: 900;
+    color: $pink-color;
+
+    &:hover {
+        font-weight: 900;
+        color: $pink-color;
+    }
+
+    &::after {
+        content: "";
+    }
+}

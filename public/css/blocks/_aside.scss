@@ -1,0 +1,65 @@
+//Aside
+.sidebar-nav {
+    width: 245px;
+    margin-right: 50px;
+}
+
+.sidebar-category,
+.sidebar-brand,
+.sidebar-designer {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.sidebar-category-view {
+    height: 37px;
+}
+
+.sidebar-category-list {
+    list-style-type: none;
+}
+
+.sidebar-category-link {
+    text-decoration: none;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+
+    &:hover {
+        color: $pink-color;
+    }
+}
+
+.sidebar-view {
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &::before {
+        content: url(../img/Rectangle_24.jpg);
+        margin-right: 11px;
+    }
+
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        content: '\f0dd';
+    }
+}
+
+.sidebar-text {
+    flex-grow: 1;
+}
+
+.sidebar-category[open] .sidebar-view {
+    color: $pink-color;
+}
+
+.sidebar-category[open] .sidebar-view::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0de';
+}

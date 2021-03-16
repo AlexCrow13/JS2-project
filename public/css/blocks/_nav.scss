@@ -1,0 +1,137 @@
+// Nav
+
+.main-nav {
+    background-color: #fff;
+}
+
+.nav-wrapper {
+    @include content-wrap;
+    // height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    position: relative;
+
+    &:hover {
+        .nav-drop {
+            transform: scaleY(1);
+        }
+    }
+}
+
+.nav-last-item:hover .nav-drop {
+    right: 0;
+    left: auto;
+
+    &::after {
+        left: 765px;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 14px 20px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &-active {
+        border-bottom: 3px solid $pink-color;
+    }
+
+    &:hover {
+        font-weight: 900;
+    }
+
+    &:focus {
+        font-weight: 900;
+    }
+
+}
+
+.nav-drop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 40px;
+    left: -90px;
+    z-index: 1;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: $transition-time;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 80px;
+        width: 10px;
+        height: 10px;
+        background: #ffffff;
+        border-top: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+.nav-drop-col {
+    width: 255px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.nav-drop-header {
+    margin: 0;
+    padding: 0 20px;
+    border-bottom: 1px solid #e8e8e8;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+}
+
+.nav-drop-list {
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.nav-drop-link {
+    text-decoration: none;
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.35px;
+
+    &:hover {
+        color: $pink-color;
+    }
+}
+
+.nav-drop-sales-img {
+    width: 255px;
+    height: 118px;
+    background-image: url(../img/superSale.jpg);
+}
